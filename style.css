@@ -1,0 +1,7 @@
+#rock, #paper, #scissors, #resetCounters {
+    height: 30px;
+    min-width: 100px;
+}
+
+table, th, td {
+    border:1px solid black;

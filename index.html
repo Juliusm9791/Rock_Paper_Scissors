@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Objects</title>
+</head>
+
+<body>
+  
+  <h1 style=>✨ Rock Paper Scissors ✨</h1>
+
+<br>
+
+<table>
+<tr>
+  <th>User wins:</th>
+  <th>PC wins:</th>
+</tr>
+<tr>
+  <td id="showResultUsr">0</td>
+  <td id="showResultPC">0</td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+  <th>User select:</th>
+  <th>PC select:</th>
+</tr>
+<tr>
+  <td  id="userSelect">-</td>
+  <td id="pcSelect">-</td>
+</tr>
+</table>
+
+<p id="whoWin">Ready</p>
+
+<br>
+  <button id="rock" value="R" onclick="startR()">Rock</button>
+  <button id="paper" value="P" onclick="startP()">Paper</button>
+  <button id="scissors" value="S" onclick="startS()">Scissors</button>
+  <br><br>
+  <button id="resetCounters" value="rs" onclick="startReset()">Reset game</button>
+
+  <p id="demo"></p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
