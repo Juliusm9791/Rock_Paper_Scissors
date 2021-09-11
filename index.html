@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>Objects</title>
+  <title>R-P-S</title>
 </head>
 
 <body>
@@ -16,22 +16,24 @@
 
 <table>
 <tr>
-  <th>User wins:</th>
+  <th>Your wins:</th>
   <th>PC wins:</th>
+  <th>Tie:</th>
 </tr>
 <tr>
   <td id="showResultUsr">0</td>
   <td id="showResultPC">0</td>
+  <td id="showResultTie">0</td>
 </tr>
 </table>
 <br>
 <table>
 <tr>
-  <th>User select:</th>
+  <th>You select:</th>
   <th>PC select:</th>
 </tr>
 <tr>
-  <td  id="userSelect">-</td>
+  <td id="userSelect">-</td>
   <td id="pcSelect">-</td>
 </tr>
 </table>
@@ -44,8 +46,6 @@
   <button id="scissors" value="S" onclick="startS()">Scissors</button>
   <br><br>
   <button id="resetCounters" value="rs" onclick="startReset()">Reset game</button>
-
-  <p id="demo"></p>
 
   <script src="script.js"></script>
 

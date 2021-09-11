@@ -1,6 +1,7 @@
 var winCounter = {
   user: 0,
   pc:0,
+  tie:0
   };
   var characters = 'RPS';
 
@@ -16,6 +17,7 @@ function play(playersInput){
     showSelection(playersInput,randomResult);
     showResults();
     showWhoWin("Even");
+    winCounter.tie++;
   }
   else if ((randomResult === "R" && playersInput === "S") ||
           (randomResult === "P" && playersInput === "R") ||
@@ -64,11 +66,13 @@ function showSelection(userS,pcS) {
 function showResults() {
   document.getElementById("showResultUsr").innerHTML = winCounter.user;
   document.getElementById("showResultPC").innerHTML = winCounter.pc;
+  document.getElementById("showResultTie").innerHTML = winCounter.tie;
 }
 
 function reset() {
   winCounter.user = 0;
   winCounter.pc = 0;
+  winCounter.tie = 0;
   showResults();
   showSelection("-","-")
   showWhoWin("Ready");
